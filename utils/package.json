@@ -1,0 +1,27 @@
+{
+  "name": "readmegenerator",
+  "version": "1.0.0",
+  "description": "my read genenerator ",
+  "main": "(index.js)",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github.com/readme.git"
+  },
+  "keywords": [
+    "nodejs",
+    "inquirer"
+  ],
+  "author": "keegan micu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/github.com/readme/issues"
+  },
+  "homepage": "https://github.com/github.com/readme#readme",
+  "dependencies": {
+    "inquirer": "^9.2.19",
+    "save": "^2.9.0"
+  }
+}
