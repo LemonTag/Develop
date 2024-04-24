@@ -1,8 +1,11 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) { //img.shields.io/badge/javascript-yellow, img.shields.io/badge/nodejs-green
+function renderLicenseBadge(license) { 
   if (license !== none) {
-
+return `![Github license](https://img.shields.io/badge/license-${license}-blue)
+![Node Badge](https://img.shields.io/badge/nodejs-green)
+![Javascript Badge](https://img.shields.io/badge/javascript-orange)
+`
   }
 }
 
@@ -34,9 +37,14 @@ function generateMarkdown(data) {
   ${data.description}
 ${renderLicenseSection(data.license)}
   ###Table of Contents
-*[installation](#installation)
-*[installation](#installation)
-*[installation](#installation)
+*[Installation](#installation)
+*[Questions](#questions)
+${renderLicenseLink(license)}
+*[Test](#test)
+*[Description](#description)
+*[Usage](#usage)
+*[Contributing](#contributing)
+
   ${(renderLicenseSection(date.license))}
 `;
 }
